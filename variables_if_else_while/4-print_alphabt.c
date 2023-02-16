@@ -9,13 +9,9 @@ int ch;
 
 for (ch = 'a'; ch <= 'z'; ch++)
 {
-if (ch != 'q')
+if (ch != 'q' && ch != 'e')
 {
-putchar(ch);
-}
-else if (ch != 'e')
-{
-putchar(ch);
+	putchar(ch);
 }
 }
 putchar('\n');
