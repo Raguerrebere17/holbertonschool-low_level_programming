@@ -16,5 +16,5 @@ oclean: clean
 clean:
 	$(RM) $(SRC)
 
-re: $(OBJ)
-	$(CC) $(SRC) -o school
+re: 
+	$(OBJ) $(SRC)
