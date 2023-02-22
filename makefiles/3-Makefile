@@ -14,7 +14,7 @@ oclean: clean
 	$(OBJ)
 
 clean:
-	$(RM) $(SRC) $(NAME)
+	$(RM) *~ $(SRC) $(NAME)
 
 re: 
 	$(OBJ) $(SRC)
