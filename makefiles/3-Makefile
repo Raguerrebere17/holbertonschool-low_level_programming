@@ -12,3 +12,8 @@ clean:
 
 oclean:
 	rm -f *.o
+
+fclean:
+	rm $(SRC) $(NAME) $(OBJ)
+
+re: all
