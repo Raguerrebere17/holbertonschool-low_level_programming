@@ -1,2 +1,2 @@
-0-Makefile:
-	cc 0-Makefile.c -o 0-Makefile
+all: 0-Makefile m.h main.c school.c
+	gcc -o school school.c main.c m.h
