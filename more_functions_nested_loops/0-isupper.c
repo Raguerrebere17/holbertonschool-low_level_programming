@@ -8,12 +8,12 @@
 
 int _isupper(int c)
 {
-	for (c = 'A'; c <= 'Z'; c++)
+	if (c > 64 && c < 91)
 	{
-	return (1);
-	for (c = 'a'; c <= 'z'; c++)
+		return (1);
+	}
+	else
 	{
 	return (0);
-	}
 	}
 }
