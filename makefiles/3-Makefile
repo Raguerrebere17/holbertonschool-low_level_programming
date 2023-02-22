@@ -16,4 +16,4 @@ oclean: clean
 clean:
 	$(RM) $(SRC)
 
-re: all
+re: $(OBJ)
