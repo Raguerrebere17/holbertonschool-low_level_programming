@@ -16,3 +16,11 @@
 <br>
 ***5. Numbers constitute the only universal language:***
 	Function that prints 10 times the numbers, from 0 to 14, followed by a new line.
+<br>
+***6. The shortest distance between two points is a straight line:***
+	Function that draws a straight line in the terminal.
+<br>
+***7. I feel like I am diagonally parked in a parallel universe:***
+	Funcion that draws a diagonal line on the terminal.
+<br>
+
