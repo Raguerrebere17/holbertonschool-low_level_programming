@@ -23,4 +23,11 @@
 ***7. I feel like I am diagonally parked in a parallel universe:***
 	Funcion that draws a diagonal line on the terminal.
 <br>
-
+***8. You are so much sunshine in every square inch:***
+	Function that prints a square, followed by a new line.
+<br>
+***9. Fizz-Buzz:***
+	Function that prints the numbers from 1 to 100 but for multiples of three print Fizz and for the multiples of five print Buzz.
+<br>
+***10. Triangles:***
+	Function that prints a triangle, followed by a new line.
