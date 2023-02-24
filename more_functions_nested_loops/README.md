@@ -5,7 +5,7 @@
 ***1. isdigit:***
 	Function that checks for a digit (0 through 9). If 'c' is a digit returns 1, if not, returns 0.
 <br>
-<h5><a>2-mul.c</a>2. Collaboration is multiplication:</h5>
+***2. Collaboration is multiplication:***
 	Function that multiplies two integers.
 <br>
 ***3. The numbers speak for themselves:***
