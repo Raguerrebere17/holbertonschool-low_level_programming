@@ -31,3 +31,5 @@
 <br>
 ***10. Triangles:***
 	Function that prints a triangle, followed by a new line.
+
+[^note]: This entire proyect was made by Robert Aguerrebere.
