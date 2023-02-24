@@ -1,5 +1,4 @@
 # more_funcions_nested_loops
-<div>
 ***0. isupper:***
 	Function that checks for uppercase character, if 'c' is uppercase returns 1, if not, returns 0.
 <br>
@@ -32,7 +31,6 @@
 <br>
 ***10. Triangles:***
 	Function that prints a triangle, followed by a new line.
-</div>
-<footer>
-<p>This entire proyect was made by Robert Aguerrebere</p>
-</footer>
+<br>
+<br>
+This entire proyect was made by Robert Aguerrebere
