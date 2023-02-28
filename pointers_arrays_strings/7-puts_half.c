@@ -28,5 +28,6 @@ void puts_half(char *str)
 		_putchar(str[b]);
 			b++;
 	}
+	_putchar(10);
 
 }
