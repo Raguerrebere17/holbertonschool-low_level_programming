@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * puts_half - asd
- * @srt: a string
+ * puts_half - Prints a half of a string
+ * @str: a string
  * Return: Void Function
  */
 
