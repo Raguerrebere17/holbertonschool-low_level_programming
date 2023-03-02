@@ -11,10 +11,13 @@ char
 	{
 		a++;
 	}
-	while (src[n])
+	while (b < n)
 	{
 		dest[a] = src[b];
-		a++;
+		if (src[b] == '\0')
+		{
+			break;
+		}
 		b++;
 	}
 
