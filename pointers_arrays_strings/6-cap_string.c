@@ -13,6 +13,10 @@ char *cap_string(char *a)
 	{
 		if (a[x] >= 97 && a[x] <= 122)
 		{
+			if (a[x] == a[0])
+			{
+				a[x] = a[x] - 32;
+			}
 			switch (a[x - 1])
 			{
 				case 10:
@@ -28,7 +32,6 @@ char *cap_string(char *a)
 				case 123:
 				case 125:
 				case 63:
-				case 2:
 				a[x] = a[x] - 32;
 			}
 		}
