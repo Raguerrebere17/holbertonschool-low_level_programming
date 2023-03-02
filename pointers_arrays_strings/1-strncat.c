@@ -14,7 +14,7 @@ char
 	while (b < n)
 	{
 		dest[a] = src[b];
-		if (src[b] == '\0')
+		if (src[a] == '\0')
 		{
 			break;
 		}
