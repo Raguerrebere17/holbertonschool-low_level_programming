@@ -28,6 +28,7 @@ char *cap_string(char *a)
 				case 123:
 				case 125:
 				case 63:
+				case 2:
 				a[x] = a[x] - 32;
 			}
 		}
