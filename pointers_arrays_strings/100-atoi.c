@@ -25,7 +25,7 @@ int _atoi(char *s)
 		{
 			a = a * -1;
 		}
-		b++
+		b++;
 	}
 	fil = fil * a;
 	if (fil != 0)
