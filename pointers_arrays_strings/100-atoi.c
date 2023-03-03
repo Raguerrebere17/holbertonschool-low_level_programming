@@ -21,7 +21,7 @@ int _atoi(char *s)
 		{
 			break;
 		}
-		if (s[b])
+		if (s[b] == 45)
 		{
 			a = a * -1;
 		}
