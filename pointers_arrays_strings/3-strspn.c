@@ -20,7 +20,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			for (b = 0; accept[b]; b++)
 			{
-				if(s[a] == accept[b])
+				if (s[a] == accept[b])
 				{
 					c++;
 				}
