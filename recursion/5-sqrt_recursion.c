@@ -4,10 +4,10 @@
  * find - Function to find
  * @a: First value to find
  * @b: Second value to find
- * @n: A number
  * Return: Square Root
  */
-int find(int a, int b)
+int
+_find(int a, int b)
 {
 	if (b * b == a)
 	{
@@ -15,17 +15,18 @@ int find(int a, int b)
 	}
 	else if (b * b != a && b < a)
 	{
-		return (find(a, b + 1));
+		return (_find(a, b + 1));
 	}
 	return (1);
 }
-int _sqrt_recursion(int n)
+int
+_sqrt_recursion(int n)
 {
 	int a = 1;
 
 	if (n / a != a)
 	{
-		a = find(n, 1);
+		a = _find(n, 1);
 	}
 	if (n / a == a)
 	{
