@@ -13,5 +13,8 @@ int _strlen(char *s)
 	{
 		len++;
 	}
-	return (len);
+	for (len < '\0')
+	{
+		_putchar(len);
+	}
 }
