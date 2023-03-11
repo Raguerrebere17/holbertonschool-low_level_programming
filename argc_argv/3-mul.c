@@ -1,14 +1,16 @@
 #include "main.h"
-
+#include <stdlib.h>
 int
 main(int argc, char *argv[])
 {
-	int count = 0;
-
-	while (argv[count] &&  count < argc)
+	if (argc < 4 && argc > 2)
 	{
-		printf("%s\n", argv[count]);
-		count++;
+		printf("%d\n", (atoi(argv[1]) * atoi(argv[2])));
+	}
+	else
+	{
+		printf("Error\n");
+		return (1);
 	}
 	return (0);
 }
