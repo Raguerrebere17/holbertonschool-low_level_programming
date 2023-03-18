@@ -23,7 +23,7 @@ char
 	}
 	for (; contNew < cont; contNew++)
 	{
-		[contNew] = str[contNew];
+		p[contNew] = str[contNew];
 	}
 	p[cont] = '\0';
 	return (p);
