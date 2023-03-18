@@ -10,7 +10,7 @@ int
 
 	if (width < 1 || height < 1)
 		return (NULL);
-	qdl = (int **)malloc(height * sizeof(int *));
+	x = (int **)malloc(height * sizeof(int *));
 	if (x == NULL)
 		return (NULL);
 	while (i < height)
