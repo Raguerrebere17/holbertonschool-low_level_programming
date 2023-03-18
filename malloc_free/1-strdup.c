@@ -14,9 +14,9 @@ char
 	while (str[cont])
 	{
 		cont++;
-	}	
+	}
 	p = malloc(sizeof(char) * cont + 1);
-	
+
 	if (p == NULL)
 	{
 		return (NULL);
