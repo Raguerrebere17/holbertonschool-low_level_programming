@@ -1,29 +1,51 @@
 #include "main.h"
 #include <stdlib.h>
+
 char
-*_strdup(char *str)
+*str_concat(char *s1, char *s2)
 {
 	int cont = 0;
+	int conts2 = 0;
 	char *p;
-	int contNew = 0;
+	char *asd;
 
-	if (str == NULL)
+	if (s1 == NULL && s2 == NULL)
 	{
-		return (NULL);
+		asd = malloc(sizeof(char) * 1);
+		return (asd);
 	}
-	while (str[cont])
+	if (s1 != NULL)
 	{
-		cont++;
+		while (s1[cont])
+			cont++;
 	}
-	p = malloc(sizeof(char) * cont + 1);
+	if (s2 != NULL)
+	{
+		while (s2[conts2])
+			conts2++;
+	}
+	p = malloc(sizeof(char) * (cont + conts2) + 1);
+	cont = 0;
+	conts2 = 0;
 	if (p == NULL)
-	{
 		return (NULL);
-	}
-	for (; contNew < cont; contNew++)
+	if (s1 != NULL)
 	{
-		p[contNew] = str[contNew];
+		while (s1[cont])
+		{
+			p[cont] = s1[cont];
+			cont++;
+		}
 	}
-	p[cont] = '\0';
+	if (s2 != NULL)
+	{
+		while (s2[conts2])
+		{
+			p[cont] = s2[conts2];
+			conts2++;
+			cont++;
+		}
+	}
 	return (p);
+
 }
