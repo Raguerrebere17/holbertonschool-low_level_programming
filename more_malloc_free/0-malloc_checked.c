@@ -6,7 +6,9 @@ void
 {
 	void *p;
 	if (b < 1)
+	{
 		exit(98);
+	}
 	p = malloc(b);
 	if (p == NULL)
 		exit(98);
