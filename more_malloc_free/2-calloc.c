@@ -1,7 +1,7 @@
 #include "main.h"
 
 void
-*_callor(unsigned int nmemb, unsigned int size)
+*_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *p;
 	unsigned int a;
