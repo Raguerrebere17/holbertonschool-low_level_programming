@@ -11,7 +11,7 @@ int
 	p = malloc(sizeof(int) * (max - min + 1));
 	if (p == NULL)
 		return (NULL);
-	for (cont = 0; cont < (max - min +1); cont++)
+	for (cont = 0; cont < (max - min + 1); cont++)
 		p[cont] = cont + min;
 	return (p);
 }
