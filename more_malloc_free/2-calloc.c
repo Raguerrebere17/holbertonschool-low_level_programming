@@ -14,3 +14,4 @@ void
 	for (a = 0; a < nmemb * size; a++)
 		p[a] = 0;
 	return (p);
+}
