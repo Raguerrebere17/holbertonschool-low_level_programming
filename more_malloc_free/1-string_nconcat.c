@@ -30,5 +30,6 @@ char
 		c[conts2 + cont] = s2[conts2];
 
 
-	c[cont + n] = '\0';													return (c);
+	c[cont + n] = '\0';
+	return (c);
 }
