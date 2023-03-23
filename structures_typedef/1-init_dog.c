@@ -1,5 +1,5 @@
-#include "dog.h"
 #include <stdio.h>
+#include "dog.h"
 /**
  * init_dog - Dog creator
  * @d: Name of the var
