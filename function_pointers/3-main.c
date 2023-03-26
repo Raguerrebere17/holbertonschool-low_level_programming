@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	if (argv[1] != NULL && argv[3] !== NULL)
+	if (argv[1] != NULL && argv[3] != NULL)
 	{
 		a = atoi(argv[1]);
 		b = atoi(argv[3]);
