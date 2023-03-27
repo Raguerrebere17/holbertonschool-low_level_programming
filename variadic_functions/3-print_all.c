@@ -53,3 +53,27 @@ void print_all(const char * const format, ...)
 	printf("\n");
 	va_end(list);
 }
+int
+printInt(int b)
+{
+	printf("%c", b);
+	return (1);
+}
+int
+printChar(int b)
+{
+	printf("%i", b);
+	return (1);
+}
+int
+printFloat(double b)
+{
+	printf("%f", b);
+	return (1);
+}
+int
+printString(char *b)
+{
+	printf("%s", b);
+	return (1);
+}
