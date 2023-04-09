@@ -1,33 +1,29 @@
 #include "lists.h"
-#include "strcpy.c"
-#include "strlen.c"
-/**
- * add_node - adds a new node
- * @head: pointer to the first node
- * @str: Pointer to the name stirng
- * Return: Address of the new element
- */
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 
+/**
+ * add_node - Adds a new node.
+ * @head: the list to which it will be added.
+ * @str: the value of str
+ * Return: the address of the new element, or NULL if it failed
+ */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *node = NULL;
+	int i = 0;
+	list_t *new;
 
-	node = malloc(sizeof(list_t));
-	if (!node)
+	new = malloc(sizeof(list_t));
+	if (new == NULL)
 	{
-		free(node);
-		return (node);
+		return (NULL);
 	}
-	node->str = malloc(sizeof(char) * _strlen(str) + 1);
-	if (!node->str)
-	{
-		free(node);
-		return (node);
-	}
-	_strcpy(node->str, str);
-	node->len = _strlen(str);
-	node->next = *head;
-
-	*head = node;
-	return (node);
+	for (i = 0; str[i]; i++)
+		;
+	new->str = strdup(str);
+	new->len = i;
+	new->next = *head;
+	*head = new;
+	return (new);
 }
