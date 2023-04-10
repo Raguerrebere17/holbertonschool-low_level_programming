@@ -25,7 +25,7 @@ int get_bit(unsigned long int n, unsigned int index)
  */
 unsigned int lenbit(unsigned long int n)
 {
-	unsigned int i = 1;	
+	unsigned int i = 1;
 
 	if (n > 1)
 		i = 1 + lenbit(n / 2);
