@@ -1,6 +1,5 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
+
 /**
  * read_textfile - Reads a text file and prints it
  * @filename: The name of the text file
@@ -21,10 +20,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	a = malloc(letters);
 	if (a == NULL)
 		return (0);
-	fread(fnd, a, letters);
+	read(fnd, a, letters);
 	for (count = 0; *(a + count); count++)
 		;
-	fwrite(STDOUT_FILENO, a, count);
-	pclose(fnd);
+	write(STDOUT_FILENO, a, count);
+	close(fnd);
 	return (count);
 }
