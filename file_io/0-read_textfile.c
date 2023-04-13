@@ -25,7 +25,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	read(fd, op, letters);
 	for (cont = 0; *(op + cont); cont++)
 		;
+<<<<<<< HEAD
 	write(STDOUT_FILENO, op, cont);
 	close(fd);
 	return (cont);
+=======
+	write(STDOUT_FILENO, a, count);
+	close(fnd);
+	return (count);
+
+>>>>>>> c8a8564d5cc06f6130ef235dd61085465e6de528
 }
