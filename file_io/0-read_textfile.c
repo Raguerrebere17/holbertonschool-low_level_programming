@@ -21,10 +21,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	a = malloc(letters);
 	if (a == NULL)
 		return (0);
-	read(fnd, a, letters);
+	fread(fnd, a, letters);
 	for (count = 0; *(a + count); count++)
 		;
-	write(STDOUT_FILENO, a, count);
-	close(fnd);
+	fwrite(STDOUT_FILENO, a, count);
+	pclose(fnd);
 	return (count);
 }
